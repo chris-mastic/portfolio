@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Mazza | Web Developer Portfolio - Coursera Index</title>
+    <meta name="description" content="Portfolio of Chris Mazza, a passionate web developer specializing in accessible and responsive web applications. Explore projects, skills, and contact information.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Recommended font for readability -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Coursera Index</h1>
+        <!-- Hamburger icon for mobile navigation -->
+        <button id="hamburger" aria-label="Open navigation menu" aria-controls="main-navigation" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <nav id="main-navigation" role="navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#about-me" tabindex="0">About Me</a></li>
+                <li><a href="#projects" tabindex="0">Projects</a></li>
+                <li><a href="#skills" tabindex="0">Skills</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Chris Mazza, a passionate web developer with experience in building responsive and accessible web applications. I enjoy learning new technologies and solving challenging problems.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/150"
+                        alt="Screenshot of Project One: a web application interface for managing tasks efficiently.">
+                    <figcaption>A web application for managing tasks efficiently.</figcaption>
+                </figure>
+                <p>This project helps users organize their daily tasks and improve productivity.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/150"
+                        alt="Screenshot of Project Two: an interactive portfolio website homepage.">
+                    <figcaption>An interactive portfolio website.</figcaption>
+                </figure>
+                <p>This project showcases my skills and previous work in web development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+            <li>Accessibility (a11y)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container">
+        <h2>Contact</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Coursera Index. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
